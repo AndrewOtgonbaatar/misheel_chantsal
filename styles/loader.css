@@ -1,0 +1,45 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: #f3cfd6;
+  color: #3f2a30;
+  transition: opacity 0.6s ease;
+}
+
+.loader.is-leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-name {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 30px;
+  font-weight: 520;
+  font-style: italic;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.loader-mark {
+  width: 16px;
+  height: 16px;
+  margin-top: 16px;
+  border-bottom: 1.5px solid currentColor;
+  border-left: 1.5px solid currentColor;
+}
+
+.loader-count {
+  position: absolute;
+  right: 32px;
+  bottom: 26px;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+}

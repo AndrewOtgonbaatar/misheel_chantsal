@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3d0d8;
+  --foreground: #4a2c33;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+  color: inherit;
+}
+
+.portfolio,
+.stage,
+.stage canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.stage {
+  position: fixed;
+  inset: 0;
+}
+
+.stage canvas {
+  display: block;
+  touch-action: none;
+}
+
+::selection {
+  background: rgba(176, 92, 110, 0.28);
+}
