@@ -295,9 +295,28 @@
   text-underline-offset: 3px;
 }
 
+.abo-mark {
+  position: absolute;
+  right: 26px;
+  bottom: 18px;
+  z-index: 4;
+  display: block;
+  width: 40px;
+  color: #4a2c33;
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.abo-mark svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hint {
   position: absolute;
-  right: 32px;
+  right: 82px;
   bottom: 24px;
   margin: 0;
   font-size: 12px;

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { contact, sections, shots, type SectionId } from "@/data/portfolio";
 import { CAMERA, PHOTO } from "@/components/scene/layout";
 import { useStore } from "@/components/store";
+import { AboMark } from "@/components/ui/abo-mark";
 import "@/styles/chrome.css";
 
 const order: SectionId[] = [
@@ -195,6 +196,7 @@ export function Chrome() {
       </div>
 
       <div className="grain" />
+      <AboMark className="abo-mark" />
     </div>
   );
 }
